@@ -6,7 +6,7 @@ metadata:
   name: vote
   namespace: vote
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   ports:
   - name: "vote-service"
     port: 5000
