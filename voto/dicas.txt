@@ -1,14 +1,13 @@
-01 k3d cluster create --servers 1  --OU-- k3d cluster create --servers 1 --agents 2
+acesso apply
 
-02 docker build -t nandocloud/argocdbsp:latest . 
+service result --url -n vote                                                                        
+http://192.168.49.2:31001
 
-03 docker push nandocloud/argocdbsp:latest
 
-04 docker run --rm -p 8080:8080 nandocloud/argocdbsp:latest
+minikube service vote --url -n vote                                                                         
+http://192.168.49.2:31000
 
-05 kubectl port-forward  svc/goapp 8080:8080
 
-16 kustomize build
 
 
 ------------------criação do argocd ----------------
