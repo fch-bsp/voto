@@ -16,7 +16,7 @@ spec:
         app: vote
     spec:
       containers:
-      - image: kodekloud/examplevotingapp_vote:v1
+      - image: kodekloud/examplevotingapp_vote:erro
         name: vote
         ports:
         - containerPort: 80
