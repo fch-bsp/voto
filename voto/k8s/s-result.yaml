@@ -6,7 +6,7 @@ metadata:
   name: result
   namespace: vote
 spec:
-  type: ClusterIP
+  type: NodePort
   ports:
   - name: "result-service"
     port: 5001
