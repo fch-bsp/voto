@@ -20,7 +20,7 @@ https://localhost:8080/
 
 acesso apply
 
-service result --url -n vote                                                                        
+minikube service result --url -n vote                                                                        
 http://192.168.49.2:31001
 
 
