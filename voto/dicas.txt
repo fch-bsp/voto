@@ -1,5 +1,5 @@
 
-------------------criação do argocd ----------------
+------------------criação d app com  argocd ----------------
 
 
 1. minikube start  --- ou --- k3d cluster create --servers 1 --agents 3
@@ -11,6 +11,7 @@
 4. kubectl get all -n argocd
 
 5. kubectl port-forward  service/argocd-server 8080:80 -n argocd
+
 https://localhost:8080/
 
 
@@ -18,7 +19,7 @@ https://localhost:8080/
 
 
 
-acesso apply
+                                                 -----------acesso apply -----------------
 
 minikube service result --url -n vote                                                                        
 http://192.168.49.2:31001
@@ -29,19 +30,9 @@ http://192.168.49.2:31000
 
 
 
-kubectl port-forward  svc/goapp -n goapp 9191:8080
 
-http://localhost:9191/
+                                                       -----   libera porta ----------------------------
 
-
-
-
-
------    libera porta ----------------------------
-
-sudo netstat -tlpn
-sudo kill -9 $(lsof -t -i:8080)
----------------------
 
 dicas:
 # Lista todos os processos que estão rodando
